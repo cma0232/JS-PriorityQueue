@@ -82,7 +82,7 @@ class CMinPriorityQueue<T> {
 }
 
 const pq = new CMinPriorityQueue<Delivery>({
-  compare: (a, b) => a.endTime - b.endTime
+  compare: (a, b) => a - b
 });
 
 // Enqueue tasks
