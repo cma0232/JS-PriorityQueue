@@ -1,6 +1,6 @@
 type CompareFn<T> = (a: T, b: T) => number;
 
-class CMinPriorityQueue<T> {
+class CustomizedPriorityQueue<T> {
   private heap: T[] = [];
   private compare: CompareFn<T>;
 
@@ -81,8 +81,8 @@ class CMinPriorityQueue<T> {
   }
 }
 
-const pq = new CMinPriorityQueue({
-  compare: (a, b) => a - b
+const pq = new CustomizedPriorityQueue({
+  compare: (a, b) => a - b // min heap
 });
 
 // Enqueue tasks
