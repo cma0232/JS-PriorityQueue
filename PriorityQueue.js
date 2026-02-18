@@ -81,7 +81,7 @@ class CMinPriorityQueue<T> {
   }
 }
 
-const pq = new CMinPriorityQueue<Delivery>({
+const pq = new CMinPriorityQueue({
   compare: (a, b) => a - b
 });
 
